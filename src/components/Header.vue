@@ -2,9 +2,13 @@
 import BaseSelect from "./BaseSelect.vue";
 
 export default {
-  data() {},
-
   components: { BaseSelect },
+
+  methods: {
+    doSomething(selected) {
+      this.$emit("sortArchetype", selected);
+    },
+  },
 };
 </script>
 
@@ -16,7 +20,7 @@ export default {
         <h1>Yu-Gi-Ho</h1>
       </div>
 
-      <BaseSelect />
+      <BaseSelect @sortArchetype="doSomething" />
     </div>
   </header>
 </template>

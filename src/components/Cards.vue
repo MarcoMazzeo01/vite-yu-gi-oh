@@ -7,12 +7,16 @@ export default {
       store,
     };
   },
+
+  props: {
+    cards: Array,
+  },
 };
 </script>
 
 <template>
   <ul class="d-flex flex-wrap gap-4 justify-content-center">
-    <li v-for="(card, index) in store.cardsArray">
+    <li v-for="(card, index) in cards">
       <div class="yugiho-card">
         <img :src="card.card_images[0].image_url" alt="test" />
         <div class="pt-3">
