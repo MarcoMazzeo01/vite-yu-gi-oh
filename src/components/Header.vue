@@ -1,4 +1,12 @@
-<script setup></script>
+<script>
+import BaseSelect from "./BaseSelect.vue";
+
+export default {
+  data() {},
+
+  components: { BaseSelect },
+};
+</script>
 
 <template>
   <header>
@@ -8,11 +16,7 @@
         <h1>Yu-Gi-Ho</h1>
       </div>
 
-      <select name="archetypes" id="archetype">
-        <option value="alien">Alien</option>
-        <option value="Blue-Eyes">Blue-Eyes</option>
-        <option value="Chaos">Chaos</option>
-      </select>
+      <BaseSelect />
     </div>
   </header>
 </template>

@@ -15,11 +15,7 @@ export default {
     };
   },
 
-  components: {
-    Header,
-    Cards,
-    Loader,
-  },
+  components: { Header, Cards, Loader },
 
   created() {
     axios
